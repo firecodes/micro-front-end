@@ -45,10 +45,10 @@ const appConfig = [
   },
   {
     id: "5",
-    title: "member portal",
+    title: "member-portal",
     icon: "el-icon-monitor",
     module: "sub-portal",
-    defaultRegister: true,
+    defaultRegister: false,
     devEntry: "//localhost:6652",
     depEntry: "http://ui.mfe.wlui.com.cn/",
     routerBase: "/portal",
@@ -62,6 +62,11 @@ const appConfig = [
         id: "5-2",
         title: "日历",
         url: "/portal/about"
+      },
+      {
+        id: "5-3",
+        title: "产品列表",
+        url: "/portal/product"
       }
     ]
   },

@@ -1,15 +1,11 @@
 <template>
   <div class="basic-calendar">
-    <h4>日历</h4>
-    <WlCalendar></WlCalendar>
+    <h1>这是关于页面</h1>
   </div>
 </template>
 
 <script>
-import WlCalendar from "@/components/wl-calendar.vue";
-
 export default {
-  name: "basic-calendar",
-  components: { WlCalendar }
+  name: "basic-calendar"
 };
 </script>
