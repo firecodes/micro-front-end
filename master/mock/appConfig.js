@@ -1,4 +1,3 @@
-
 const appConfig = [
   {
     id: "1",
@@ -28,7 +27,7 @@ const appConfig = [
     icon: "el-icon-date",
     module: "subapp-blog",
     defaultRegister: false,
-    devEntry: "//localhost:6652",
+    devEntry: "//localhost:6653",
     depEntry: "http://blog.mfe.wlui.com.cn",
     routerBase: "/blog",
     children: [
@@ -41,6 +40,28 @@ const appConfig = [
         id: "2-2",
         title: "穿梭框",
         url: "/blog/about"
+      }
+    ]
+  },
+  {
+    id: "5",
+    title: "member portal",
+    icon: "el-icon-monitor",
+    module: "sub-portal",
+    defaultRegister: true,
+    devEntry: "//localhost:6652",
+    depEntry: "http://ui.mfe.wlui.com.cn/",
+    routerBase: "/portal",
+    children: [
+      {
+        id: "5-1",
+        title: "表格",
+        url: "/portal"
+      },
+      {
+        id: "5-2",
+        title: "日历",
+        url: "/portal/about"
       }
     ]
   },
@@ -66,17 +87,17 @@ const appConfig = [
       }
     ]
   }
-]
+];
 
 export default [
   {
-    url: '/Api/GetAppConfigs',
-    type: 'post',
+    url: "/Api/GetAppConfigs",
+    type: "post",
     response: () => {
       return {
         code: 200,
         data: appConfig
-      }
+      };
     }
-  },
-]
+  }
+];
