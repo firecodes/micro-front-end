@@ -3,7 +3,9 @@
     <h4>穿梭框</h4>
     <h4 class="align-center">
       <label>请打开f12查看移动数据</label>
-      <el-button size="medium" type="info" @click="changeMode">当前模式：{{ mode }}</el-button>
+      <el-button size="medium" type="info" @click="changeMode"
+        >当前模式：{{ mode }}</el-button
+      >
       <el-button size="medium" @click="clearChecked()">清除选中</el-button>
     </h4>
     <div class="box">
@@ -21,7 +23,7 @@
         :filterNode="filterNode"
         :defaultProps="defaultProps"
         :defaultCheckedKeys="defaultCheckedKeys"
-        :defaultExpandedKeys="[2,3]"
+        :defaultExpandedKeys="[2, 3]"
         @right-check-change="rightCheckChange"
         @left-check-change="leftCheckChange"
         @removeBtn="remove"
@@ -29,7 +31,12 @@
         height="540px"
         node_key="id"
       >
-        <span slot="title-right" class="my-title-right" @click="handleTitleRight">自定义内容</span>
+        <span
+          slot="title-right"
+          class="my-title-right"
+          @click="handleTitleRight"
+          >自定义内容</span
+        >
       </tree-transfer>
     </div>
   </div>

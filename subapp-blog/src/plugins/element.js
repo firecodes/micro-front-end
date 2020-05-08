@@ -1,5 +1,22 @@
 import Vue from "vue";
-import { Button, ButtonGroup, Form, FormItem, Input, Radio, RadioGroup, Checkbox, CheckboxGroup, Switch, Select, Option, TimePicker, Col, DatePicker, Tree } from "element-ui";
+import {
+  Button,
+  ButtonGroup,
+  Form,
+  FormItem,
+  Input,
+  Radio,
+  RadioGroup,
+  Checkbox,
+  CheckboxGroup,
+  Switch,
+  Select,
+  Option,
+  TimePicker,
+  Col,
+  DatePicker,
+  Tree
+} from "element-ui";
 
 Vue.use(Button);
 Vue.use(ButtonGroup);

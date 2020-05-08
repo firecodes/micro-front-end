@@ -29,7 +29,11 @@
       <el-col class="line" :span="2">-</el-col>
       <el-col :span="11">
         <el-form-item prop="date2">
-          <el-time-picker placeholder="选择时间" v-model="ruleForm.date2" style="width: 100%;"></el-time-picker>
+          <el-time-picker
+            placeholder="选择时间"
+            v-model="ruleForm.date2"
+            style="width: 100%;"
+          ></el-time-picker>
         </el-form-item>
       </el-col>
     </el-form-item>
@@ -54,7 +58,9 @@
       <el-input type="textarea" v-model="ruleForm.desc"></el-input>
     </el-form-item>
     <el-form-item>
-      <el-button type="primary" @click="submitForm('ruleForm')">立即创建</el-button>
+      <el-button type="primary" @click="submitForm('ruleForm')"
+        >立即创建</el-button
+      >
       <el-button @click="resetForm('ruleForm')">重置</el-button>
     </el-form-item>
   </el-form>

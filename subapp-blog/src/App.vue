@@ -111,5 +111,5 @@ export default {
 .parent-child-communication {
   padding: 20px 0;
   line-height: 36px;
-}
-</style>>
+}</style
+>>
