@@ -1,0 +1,212 @@
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+
+///* 改变主题色变量 */
+$--color-primary: $primary;
+//
+///* 改变 icon 字体路径变量，必需 */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+////
+@import "~element-ui/packages/theme-chalk/src/index";
+
+body, textarea {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  // font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+
+  // font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+
+  // font-family: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+  // font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  font-family: PingFangSC,helvetica neue,hiragino sans gb,arial,microsoft yahei ui,microsoft yahei,simsun,sans-serif!important;
+  // font-family: Century Gothic, "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+
+}
+input, textarea, select, button{
+  // font-family: Century Gothic, "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif!important;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+  display: block;
+}
+::-moz-placeholder{color:#c0c4d3;}              //ff
+::-webkit-input-placeholder{color:#c0c4d3;}     //chrome,safari
+:-ms-input-placeholder{color:#c0c4d3;}          //ie10
+body {
+  line-height: 1;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: none
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* custom */
+
+a {
+  backface-visibility: hidden;
+  text-decoration: none;
+}
+
+li {
+  list-style: none
+}
+
+html {
+  box-sizing: border-box;
+  overflow-y: hidden;
+}
+body{
+  font-size: 16px;
+}
+
+/* 滚动条出现页面不跳动*/
+//html {
+//  //overflow-y: scroll;
+//}
+//
+//:root {
+//  //overflow-y: auto;
+//  overflow-x: hidden;
+//}
+//
+//:root body {
+//  position: absolute;
+//}
+//
+//body {
+//  width: 100vw;
+//  overflow: hidden;
+//}
+
+/*结束*/
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+div:focus {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+//main-container全局样式
+.app-main {
+  background: #F9F9F9;
+  min-height: 100%;
+  height: 100vh!important;
+}
+
+.app-container {
+  padding: 20px;
+}
+
+
+.cursor-pointer {
+  cursor: pointer;
+  z-index: 11;
+}
+
+.z-index-1 {
+  z-index: -1;
+}
+
+.pointer-events{
+  pointer-events: none;
+}
+
+.not-allowed{
+  cursor: not-allowed!important;
+}
+
+.bg-f5f7fa{
+  background-color: #f5f7fa!important;
+}
+.el-picker-panel *[slot=sidebar], .el-picker-panel__sidebar{
+  width: 111px!important;
+}
+//html{
+//  font-size: 20px;
+//}
+//@media screen and (max-width: 2560px) {
+//  html {
+//    font-size: 22px;
+//  }
+//}
+//
+//@media screen and (max-width: 1920px) {
+//  html {
+//    font-size: 20px;
+//  }
+//}
+//@media screen and (max-width: 1440px){
+//  html {
+//    font-size: 18px;
+//  }
+//}
+
+
+

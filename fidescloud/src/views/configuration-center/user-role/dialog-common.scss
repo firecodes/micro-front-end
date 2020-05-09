@@ -1,0 +1,14 @@
+// p 样式
+@mixin p-style() {
+  height: 35px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  background-color: rgba(249, 244, 244, 1);
+  color: rgba(16, 16, 16, 1);
+  font-size: 15px;
+  text-align: left;
+  padding:0 10px;
+  border: 1px solid rgba(187, 187, 187, 1);
+  margin-bottom: 9px;
+}

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 42 42">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Wave2);
+      }
+
+      .cls-2 {
+        fill: #bbb;
+        stroke: #bbb;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+
+      .cls-5 {
+        fill: none;
+      }
+    </style>
+    <clipPath id="clip-Wave2">
+      <rect width="42" height="42"/>
+    </clipPath>
+  </defs>
+  <g id="Wave2" class="cls-1">
+    <g id="椭圆_3" data-name="椭圆 3" class="cls-2">
+      <circle class="cls-4" cx="21" cy="21" r="21"/>
+      <circle class="cls-5" cx="21" cy="21" r="20.5"/>
+    </g>
+    <g id="edmyoujianyingxiao" transform="translate(-11.017 -86.549)">
+      <path id="路径_51" data-name="路径 51" class="cls-3" d="M46.017,99.223a2.512,2.512,0,0,0-2.474-2.674H21.491a2.512,2.512,0,0,0-2.474,2.674v16.765a2.512,2.512,0,0,0,2.474,2.674H43.54a2.512,2.512,0,0,0,2.474-2.674V99.223Zm-24.51-.94H43.564a.52.52,0,0,1,.534.554c-.02.068-10.119,10.131-10.119,10.131a2.752,2.752,0,0,1-1.51.59,2.793,2.793,0,0,1-1.522-.7s-9.93-9.557-9.978-9.621a.658.658,0,0,1,.538-.956ZM43.56,116.927H21.507a.917.917,0,0,1-.936-.659V101.062l10.075,9.673a3.4,3.4,0,0,0,1.9.663,2.828,2.828,0,0,0,1.891-.663L44.5,101.066v15.2c-.112.534-.944.659-.944.659Zm0,.281" transform="translate(0)"/>
+      <path id="路径_52" data-name="路径 52" class="cls-3" d="M62.171,563.931h4.076s1.265.763,0,1.566H62.171Zm.12,3.032h6.927s1.446.723,0,1.646H62.292Z" transform="translate(-41.97 -454.553)"/>
+    </g>
+  </g>
+</svg>

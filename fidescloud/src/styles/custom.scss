@@ -1,0 +1,159 @@
+//sidebar
+$menuBg: #0f377e;
+$subMenuBg: #0f377e;
+$menuHover: #001528;
+// 全局主题颜色
+$primary: #2777FF;
+
+// 登录按钮背景颜色
+$login-btn-bgColor: #5B9BD5;
+
+// 20190920 新的全局主题颜色
+$new-primary: #2777FF;
+$over-margin: 50px;
+$button-bg-color: $primary;
+// 整体背景颜色
+$bgColor: #EfEfEf;
+
+$top-bg-color: $primary;
+// 顶部高度
+$el-header: 60px;
+
+// 操作按钮的的背景
+$--operate-bg-height: 46px;
+
+$--operate-bg-color: rgba(255, 255, 255, 1);
+// 给目标添加下划线
+@mixin border-bottom-solid($height, $color) {
+  position: relative;
+  width: 100%;
+  &:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: $height;
+    background-color: $color;
+  }
+}
+
+$--vertical-height: 26px;
+$--vertical-padding-left: 21px;
+$--vertical-font-size: 18px;
+$--vertical-color: rgba(0, 0, 0, 1);
+$--vertical-width: 3px;
+// 竖线 + 标题
+@mixin vertical-moulding($top: 0, $width: $--vertical-width, $height: $--vertical-height, $color: #333333) {
+  position: relative;
+  color: $--vertical-color;
+  font-size: $--vertical-font-size;
+  font-weight: bold;
+  height: $--vertical-height + $top ;
+  line-height: $--vertical-height;
+  padding-left: $--vertical-padding-left;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: $top;
+    background: $new-primary;
+    width: $width;
+    height: $height;
+  }
+}
+
+.el-table th > .cell, .el-table .cell {
+  word-break: break-word !important;
+}
+.handle-btns span, .handle-btns a {
+  color: #409EFF;
+  position: relative;
+  margin: 0 10px;
+  word-break: break-word;
+  cursor: pointer;
+}
+.handle-btns span:not(:last-child):after, .handle-btns a:not(:last-child):after {
+  content: '';
+  width: 1px;
+  height: 14px;
+  background-color: #409EFF;
+  position: absolute;
+  right: -14px;
+  top: 1px;
+}
+.text-center {
+  text-align: center;
+}
+.bg-fff {
+  background-color: #fff;
+}
+.remove-btn {
+  // background: #ccc;
+  border-radius: 50%;
+  overflow: hidden;
+  color: #ccc;
+  font-size: 22px;
+  position: absolute;
+  top: -8px;
+  right: -9px;
+  cursor: pointer;
+  z-index: 2000;
+}
+
+// 下拉日历 el-date-picker
+.ed-date-picker{
+  .el-month-table td.start-date .cell, .el-month-table td.end-date .cell{
+    color: #ffffff;
+  }
+}
+.ed-data-table {
+  .el-date-table td.current:not(.disabled) span, .start-date span{
+    color: #ffffff!important;
+  }
+}
+
+.tags_popver{
+  /deep/ .member_tags_li{
+    min-width:80px;
+    max-width: 190px;
+    height:30px;
+    background:rgba(74,144,226,0.07);
+    border-radius:15px;
+    border:1px solid rgba(39,119,255,1);
+    font-size:14px;
+    font-family: Helvetica-medium-1;
+    color:rgba(39,119,255,1);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px 0 0;
+    label{
+      margin:0 15px;
+    }
+  }
+}
+
+.new_confirm_confirm{
+  background: $new-primary!important;
+  border-color: $new-primary!important;
+  &:hover{
+    background: $new-primary!important;
+    border-color: $new-primary!important;
+  }
+}
+.new_confirm_cancel{
+  border-color: $new-primary!important;;
+  color: $new-primary!important;
+  &:hover{
+    background: #ffffff!important;
+    border-color: $new-primary!important;
+    color: $new-primary!important;
+  }
+}
+//.el-button--default:hover, .el-button--default:focus{
+//  background-color: #ffffff!important;
+//}
+.el-button--primary:hover, .el-button--primary:focus{
+  background-color: $new-primary!important;
+}

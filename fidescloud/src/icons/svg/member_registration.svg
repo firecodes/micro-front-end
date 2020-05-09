@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Member_registration_1);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-Member_registration_1">
+      <rect width="48" height="48"/>
+    </clipPath>
+  </defs>
+  <g id="Member_registration_1" data-name="Member registration – 1" class="cls-1">
+    <g id="member_register" data-name="member register" transform="translate(-64.3 -96.2)">
+      <path id="路径_23" data-name="路径 23" class="cls-2" d="M109.3,98.2h-42a3,3,0,0,0-3,3v32.527a3,3,0,0,0,3,3h12v3a3,3,0,0,0,3,3h12a3,3,0,0,0,3-3v-3h12a3,3,0,0,0,3-3V101.2A3,3,0,0,0,109.3,98.2Zm-.365,34.8H67.684V101.97h41.259V133Z" transform="translate(0 0)"/>
+      <path id="路径_24" data-name="路径 24" class="cls-2" d="M196.922,262.214a5.13,5.13,0,0,1,5.218-5.127,5.132,5.132,0,1,1-1.732,10A5.069,5.069,0,0,1,196.922,262.214Zm5.127,6.586c-3.422,0-10.249,1.963-10.249,5.857v1.427a1.5,1.5,0,0,0,1.5,1.5h17.5a1.5,1.5,0,0,0,1.5-1.5v-1.427C212.3,270.763,205.471,268.8,202.049,268.8Zm22.573-8.71h-9.01a1.5,1.5,0,0,1,0-3h9.01a1.5,1.5,0,1,1,0,3Zm1.5,4.328a1.506,1.506,0,0,0-1.5-1.5h-9.01a1.5,1.5,0,1,0,0,3h9.01A1.506,1.506,0,0,0,226.124,264.418Zm0,5.835a1.506,1.506,0,0,0-1.5-1.5h-9.01a1.5,1.5,0,1,0,0,3h9.01A1.506,1.506,0,0,0,226.124,270.253Zm0,5.835a1.506,1.506,0,0,0-1.5-1.5h-9.01a1.5,1.5,0,1,0,0,3h9.01A1.506,1.506,0,0,0,226.124,276.088Z" transform="translate(-120.662 -150.365)"/>
+    </g>
+  </g>
+</svg>

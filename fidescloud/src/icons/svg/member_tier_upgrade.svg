@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Member_tier_upgrade_1);
+      }
+
+      .cls-2 {
+        fill: #fff;
+        stroke: #fff;
+      }
+    </style>
+    <clipPath id="clip-Member_tier_upgrade_1">
+      <rect width="48" height="48"/>
+    </clipPath>
+  </defs>
+  <g id="Member_tier_upgrade_1" data-name="Member tier upgrade – 1" class="cls-1">
+    <g id="upgrade" transform="translate(-210.167 -65.726)">
+      <path id="路径_25" data-name="路径 25" class="cls-2" d="M249.46,80.589,236.239,67.2a3.4,3.4,0,0,0-4.755,0L218.146,80.589a3.468,3.468,0,0,0,2.435,5.874h4.755V96.8h2.435V84H220.7a1.17,1.17,0,0,1-.928-.587A.819.819,0,0,1,220,82.351L233.107,68.84a1.148,1.148,0,0,1,1.392,0l13.337,13.511a1.021,1.021,0,0,1,.232,1.057,1.17,1.17,0,0,1-.928.587h-7.075V99.269a.114.114,0,0,1-.116.117H225.337v2.467h14.5a2.591,2.591,0,0,0,2.551-2.585V86.463h4.755a3.406,3.406,0,0,0,3.131-2.115,3.522,3.522,0,0,0-.812-3.76Zm0,0" transform="translate(0 0)"/>
+      <path id="路径_26" data-name="路径 26" class="cls-2" d="M385.986,813.86a1.338,1.338,0,0,1-1.437,1.338H368.741a1.338,1.338,0,0,1-1.437-1.338h0a1.338,1.338,0,0,1,1.437-1.338h15.808a1.338,1.338,0,0,1,1.437,1.338Zm0,0" transform="translate(-142.618 -707.1)"/>
+      <path id="路径_27" data-name="路径 27" class="cls-2" d="M422.643,924.941a1.1,1.1,0,0,1-1,1.115H410.6a1.03,1.03,0,0,1-1-1.115h0a1.1,1.1,0,0,1,1-1.115H421.64a1.1,1.1,0,0,1,1,1.115Zm0,0" transform="translate(-182.141 -812.83)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,76 @@
+{
+  "main": {
+    "type": "index",
+    "homepage": {
+      "type": "page",
+      "member": {
+        "type": "div",
+        "display_all": true
+      },
+      "sales": {
+        "type": "div",
+        "display_all": true
+      }
+    },
+    "member": {
+      "type": "list",
+      "recruitment": {
+        "type": "page",
+        "display_all": true
+      },
+      "member_view": {
+        "type": "page",
+        "display_all": true
+      }
+    },
+    "loyalty": {
+      "type": "list",
+      "point": {
+        "type": "page",
+        "display_all": true
+      },
+      "tier": {
+        "type": "page",
+        "display_all": true
+      },
+      "coupon": {
+        "type": "page",
+        "display_all": true
+      },
+      "gift": {
+        "type": "page",
+        "display_all": true
+      },
+      "redemption": {
+        "type": "page",
+        "display_all": true
+      },
+      "redeem_details": {
+        "type": "page",
+        "noPermission": ["cancel_redemption"]
+      }
+    },
+    "campaign": {
+      "type": "list",
+      "campaign_setting": {
+        "type": "page",
+        "display_all": true
+      },
+      "campaign_list": {
+        "type": "page",
+        "display_all": true
+      },
+      "lifecycle_studio": {
+        "type": "page",
+        "display_all": true
+      },
+      "trigger_studio": {
+        "type": "page",
+        "display_all": true
+      }
+    },
+    "reporting": {
+      "display_all": true
+    }
+  }
+}

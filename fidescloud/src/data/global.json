@@ -1,0 +1,29 @@
+{
+  "app": {
+    "version": "1.0",
+    "name": "FC"
+  },
+  "global_items": {
+    "label": "China",
+    "language": {
+      "default": "lang_zh",
+      "optional": [{
+        "cfg_key": "lang_en",
+        "cfg_value": "English"
+      }, {
+        "cfg_key": "lang_zh",
+        "cfg_value": "中文"
+      }]
+    },
+    "version": "1.0.0",
+    "date_format": "dd-MM-yyyy",
+    "currency_symbol": "SG$",
+    "time_format": "HH:mm:ss",
+    "phone_country_code": "+91",
+    "currency": "SG$",
+    "date_time_format": "dd-MM-yyyy HH:mm:ss",
+    "timezone": "UTC+08:00",
+    "thousandsSeparator": ",",
+    "get_kpi_access": "default"
+  }
+}

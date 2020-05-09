@@ -1,0 +1,106 @@
+//to reset element-ui default css
+.el-upload {
+  input[type="file"] {
+    display: none !important;
+  }
+}
+
+.el-upload__input {
+  display: none;
+}
+
+//暂时性解决dialog 问题 https://github.com/ElemeFE/element/issues/2461
+.el-dialog {
+  transform: none;
+  left: 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+//element ui upload
+.upload-container {
+  .el-upload {
+    width: 100%;
+    .el-upload-dragger {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+
+
+
+// 去掉横向滚动条
+.app-main{
+  .el-scrollbar__wrap{
+    overflow-x: hidden;
+  }
+  //.el-scrollbar__thumb{
+  //  display: none!important;
+  //}
+}
+
+// 表格表头背景颜色和字体颜色
+.el-table__header-wrapper .el-table__header th {
+  background: #F5F7FA;
+  color: #90939A;
+}
+
+.el-tabs__content{
+  overflow: unset;
+}
+.el-range-separator{
+  padding: 0!important
+}
+
+// 移除表单验证后的颜色
+.el-form-item.is-success .el-input__inner{
+  border-color:rgb(220, 223, 230)!important;
+}
+
+.is-horizontal{
+  display: none;
+}
+.el-form-item.is-success .el-input__validateIcon{
+  color: $primary!important;
+}
+.el-menu-item.is-active{
+  color: $primary!important;
+}
+
+.trigger-campaign {
+  .el-dialog--center .el-dialog__body{
+    padding: 7px 37px 29px 43px!important;
+  }
+  .el-dialog__header {
+    border-bottom-style: none!important;
+  }
+  .el-form-item__label{
+    color: rgba(16, 16, 16, 1)!important;
+    font-size: 16px!important;
+  }
+}
+
+.tier .is-horizontal{
+  display:inline-block;
+}
+
+.width-85{
+  width: 85px!important;
+}
+.width-100{
+  width: 100px!important;
+}
+.width-150{
+  width: 150px!important;
+}
+
+.pre-text {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.el-date-editor .el-range-separator{
+  width: 12%!important;
+}

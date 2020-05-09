@@ -1,59 +1,64 @@
+import "./public-path";
 import Vue from "vue";
 import VueRouter from "vue-router";
 import App from "./App.vue";
-import "./public-path";
 import routes from "./router";
 import store from "./store";
-import "./plugins/element.js";
-import "@/assets/css/demo.min.css";
-import routeMatch from "@/auth/route-match"; // 导入路由匹配文件路径函数
+import ElementUI from "element-ui";
+import i18n from "./lang";
+import "element-ui/lib/theme-chalk/index.css";
+// 自定义全局组件
+import "./custom-component";
 
 Vue.config.productionTip = false;
+Vue.use(ElementUI);
 
 let router = null;
 let instance = null;
-const __qiankun__ = window.__POWERED_BY_QIANKUN__;
 
-export async function bootstrap({
-  components,
-  utils,
-  emitFnc,
-  pager,
-  actions
-}) {
-  // 注册主应用下发的组件
-  Vue.use(components);
-  // 把工具函数挂载在vue $mainUtils对象
-  Vue.prototype.$mainUtils = utils;
-  // 把mainEmit函数一一挂载
-  Object.keys(emitFnc).forEach(i => {
-    Vue.prototype[i] = emitFnc[i];
-  });
-  // 在子应用注册呼机
-  pager.subscribe(v => {
-    console.log(`监听到子应用${v.from}发来消息：`, v);
-    // store.dispatch('app/setToken', v.token)
-  });
-  Vue.prototype.$pager = pager;
-  // 在子应用注册官方通信
-  /* actions.onGlobalStateChange((state, prev) => console.log(`子应用subapp-ui监听到来自${state.from}发来消息：`, state, prev)); */
-  Vue.prototype.$actions = actions;
-}
-
-export async function mount({ data = {}, ROUTES, routerBase, state } = {}) {
+function render(props = {}) {
+  const { container } = props;
   router = new VueRouter({
-    base: __qiankun__ ? routerBase : "/",
+    base: window.__POWERED_BY_QIANKUN__ ? "/portal" : "/",
     mode: "history",
-    routes: __qiankun__ ? routeMatch(ROUTES, routerBase) : routes
+    routes
   });
+
   instance = new Vue({
     router,
+    i18n,
     store,
-    render: h =>
-      h(App, {
-        props: { ...data, ...state }
-      })
-  }).$mount("#app");
+    render: h => h(App)
+  }).$mount(container ? container.querySelector("#app") : "#app");
+}
+
+if (!window.__POWERED_BY_QIANKUN__) {
+  render();
+}
+
+// function storeTest(props) {
+//   props.onGlobalStateChange &&
+//     props.onGlobalStateChange(
+//       (value, prev) => console.log(`[onGlobalStateChange - ${props.name}]:`, value, prev),
+//       true,
+//     );
+//   props.setGlobalState &&
+//     props.setGlobalState({
+//       ignore: props.name,
+//       user: {
+//         name: props.name,
+//       },
+//     });
+// }
+
+export async function bootstrap() {
+  console.log("[vue] vue app bootstraped");
+}
+
+export async function mount(props) {
+  console.log("[vue] props from main framework", props);
+  // storeTest(props);
+  render(props);
 }
 
 export async function unmount() {
@@ -61,12 +66,3 @@ export async function unmount() {
   instance = null;
   router = null;
 }
-
-// 单独开发环境
-__qiankun__ || mount();
-
-/* new Vue({
-  router,
-  store,
-  render: h => h(App)
-}).$mount("#app"); */

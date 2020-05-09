@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
     <h1>这是主应用的首页</h1>
+    <button type="primary" @click="skip">click</button>
   </div>
 </template>
 
@@ -10,7 +10,15 @@
 
 export default {
   name: "home",
-  components: {}
+  components: {},
+  methods: {
+    skip() {
+      window.history.pushState({}, "portal", "/portal/about");
+      if (!window.sessionStorage.getItem("crossRoute")) {
+        location.reload();
+      }
+    }
+  }
 };
 </script>
 <style lang="scss" scoped>

@@ -1,0 +1,61 @@
+.li {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-right: 10px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  height: 30px;
+  p {
+    line-height: 17px;
+    font-size: 14px;
+    padding: 6px 17px;
+    border-radius: 15px;
+    border: 1px dashed rgba(198,219,255,1);
+    background: #e8f0fb;
+    z-index:11;
+    color: $new-primary;
+    display: flex;
+    align-items: center;
+    span {
+      padding-right: 3px;
+      margin-top: -2px;
+  }
+}
+}
+  .check{
+    p{
+      border-style: solid;
+      border-color: $new-primary;
+      color: $new-primary;
+  }
+}
+.dialog-footer{
+  .el-button{
+    min-width: 80px;
+    border-color: $new-primary;
+  }
+  .cancel{
+    background-color: #ffffff;
+    color: $new-primary;
+  }
+  .save{
+    background-color: $new-primary;
+  }
+}
+.el-select, .el-input-number{
+  width: 300px!important;
+}
+.dialog_body_height{
+  height: 220px;
+}
+/deep/ .el-form-item{
+  border: none!important;
+}
+/deep/ .el-form-item__label, /deep/ .el-form-item {
+  line-height: 20px!important;
+}
+/deep/ .el-form-item__content{
+  margin: 0 0 24px!important;
+
+}

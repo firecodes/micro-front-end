@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Description);
+      }
+
+      .cls-2 {
+        fill: #eb5648;
+      }
+    </style>
+    <clipPath id="clip-Description">
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="Description" class="cls-1">
+    <g id="tishi" transform="translate(-12.9 -15.3)">
+      <path id="路径_55" data-name="路径 55" class="cls-2" d="M24.9,39.3a12,12,0,1,1,12-12A12.013,12.013,0,0,1,24.9,39.3Zm0-22.324A10.324,10.324,0,1,0,35.224,27.3,10.336,10.336,0,0,0,24.9,16.976Z" transform="translate(0 0)"/>
+      <path id="路径_56" data-name="路径 56" class="cls-2" d="M466.717,715.317m-1.117,0a1.117,1.117,0,1,0,1.117-1.117A1.117,1.117,0,0,0,465.6,715.317Z" transform="translate(-441.818 -682.1)"/>
+      <path id="路径_57" data-name="路径 57" class="cls-2" d="M456.234,231.859h-1.675L454,221.8h2.792Z" transform="translate(-430.497 -201.54)"/>
+    </g>
+  </g>
+</svg>

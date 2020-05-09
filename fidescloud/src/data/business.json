@@ -1,0 +1,14 @@
+{
+  "app": {
+    "version": "1.0",
+    "name": "FC"
+  },
+  "business": {
+    "version": "1.0.0",
+    "common": {
+      "default_language": "lang_en",
+      "mobile_format": "/^(?:(?:\\+|0{0,2})91(\\s*[\\-]\\s*)?|[0]?)?[789]\\d{9}$/",
+      "get_kpi_access": "default"
+    }
+  }
+}

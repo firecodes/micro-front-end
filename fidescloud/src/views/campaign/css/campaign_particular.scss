@@ -1,0 +1,135 @@
+/*
+  活动详情页面css
+*/
+.campaign_particular{
+  margin: 30px 50px;
+  &__scroll{
+    height: calc(96vh - 120.63px)
+  }
+  &__operation_button{
+    text-align: right;
+    .next-button{
+      min-width:88px;
+      background: $new-primary;
+      border-color: $new-primary;
+    }
+    .previous, .back{
+      border-color: $new-primary;
+      color: $new-primary;
+      background-color: #ffffff;
+    }
+  }
+  &__condition{
+    ul{
+      display: flex;
+      justify-content: space-between;
+      li{
+        padding: 35px 1.95% 0;
+        text-align: center;
+        min-width: 200px;
+        width: 22.7%;
+        height:200px;
+        background:rgba(255,255,255,1);
+        box-shadow:0 5px 15px -3px rgba(204,204,204,1);
+        border-radius:0 0 20px 20px;
+      }
+      .background{
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        border-radius: 0 0 20px 20px;
+        background: $new-primary;
+        z-index: -1;
+      }
+      label{
+        cursor: pointer;
+        font-size:18px;
+        font-family: HelveticaNeue1;
+        color:rgba(102,102,102,1);
+        line-height:22px;
+        display: block;
+      }
+      .svg-icon{
+        margin-top: 18px;
+        font-size: 30px;
+        color: $new-primary;
+      }
+      h2{
+        margin-top: 15px;
+        font-size:36px;
+        font-family: HelveticaNeue1-Bold;
+        font-weight:bold;
+        color:rgba(51,51,51,1);
+        line-height:44px;
+      }
+      .checked{
+        position: relative;
+        text-align: left;
+        width: 25.3%;
+        background-color: #5984FF;
+        z-index: 10;
+        &:before{
+          content: '';
+          position: absolute;
+          width: 95%;
+          height: 210px;
+          background: rgba(0, 95, 255, 0.18);
+          border-radius: 0 0 20px 20px;
+          left: 0;
+          right: 0;
+          top: 0;
+          margin: auto;
+          z-index: -1;
+        }
+        .background{
+          display: block;
+        }
+        &:after{
+          content: '';
+          position: absolute;
+          width: 92%;
+          height:220px;
+          background:rgba(0, 95, 255, 0.08);
+          border-radius:0 0 20px 20px;
+          left: 0;
+          right: 0;
+          top: 0;
+          margin: auto;
+          z-index: -2;
+        }
+        label, h2{
+          color: #ffffff;
+        }
+        .svg-icon{
+          color: #ffffff;
+        }
+      }
+      .not-confirm{
+        position: relative;
+        text-align: left;
+        z-index: 10;
+        label, h2{
+          color: #999999;
+        }
+        .svg-icon{
+          display: none;
+        }
+        .none-icon{
+          margin-top: 30px;
+          width:30px;
+          height:4px;
+          background:rgba(153,153,153,1);
+        }
+      }
+    }
+  }
+  &__content{
+    margin-top: 50px;
+    width:100%;
+    background:rgba(255,255,255,1);
+    box-shadow:0 5px 15px -3px rgba(204,204,204,1);
+  }
+}

@@ -1,0 +1,197 @@
+[
+  {
+    "path": "",
+    "children": [{
+      "path": "/homepage",
+      "noPermission": []
+    }]
+  },
+  {
+    "path": "/member",
+    "children": [
+      {
+        "path": "recruitment",
+        "noPermission": []
+      },
+      {
+        "path": "improve-info/:member_code",
+        "noPermission": []
+      },
+      {
+        "path": "member-view",
+        "noPermission": []
+      },
+      {
+        "path": "member-query",
+        "noPermission": []
+      },
+      {
+        "path": "member-view/member-details/:id",
+        "noPermission": []
+      },
+      {
+        "path": "member-query/member-details/:id",
+        "noPermission": []
+      },
+      {
+        "path": "member-view/person-info",
+        "noPermission": []
+      },
+      {
+        "path": "member-query/person-info",
+        "noPermission": []
+      },
+      {
+        "path": "import",
+        "noPermission": []
+      },
+      {
+        "path": "edit-segmentation",
+        "noPermission": []
+      },
+      {
+        "path": "loyalty-info",
+        "noPermission": []
+      },
+      {
+        "path": "campaign-info",
+        "noPermission": []
+      },
+      {
+        "path": "campaign-detail",
+        "noPermission": []
+      },
+      {
+        "path": "social-media-info",
+        "noPermission": []
+      }
+    ]
+  },
+  {
+    "path": "/loyalty",
+    "children": [
+      {
+        "path": "point",
+        "noPermission": []
+      },
+      {
+        "path": "tier",
+        "noPermission": []
+      },
+      {
+        "path": "coupon",
+        "noPermission": []
+      },
+      {
+        "path": "gift",
+        "noPermission": []
+      },
+      {
+        "path": "redemption",
+        "noPermission": []
+      },
+      {
+        "path": "redemption/add-event/:id",
+        "noPermission": []
+      },
+      {
+        "path": "redemption/edit-event/:id/:rid",
+        "noPermission": []
+      },
+      {
+        "path": "redemption/view-event/:id/:rid",
+        "noPermission": []
+      },
+      {
+        "path": "redemption/member-redeem-detail",
+        "noPermission": ["cancel_redemption"]
+      },
+      {
+        "path": "add-gift",
+        "noPermission": []
+      }
+    ]
+  },
+  {
+    "path": "/campaign",
+    "children": [
+      {
+        "path": "campaign-setting",
+        "noPermission": []
+      },
+      {
+        "path": "campaign-edit",
+        "noPermission": []
+      },
+      {
+        "path": "campaign-view",
+        "noPermission": []
+      },
+      {
+        "path": "advanced-query",
+        "noPermission": []
+      },
+      {
+        "path": "campaign-effect/:code/:id",
+        "noPermission": []
+      },
+      {
+        "path": "lifecycle-studio/prospect/:id",
+        "noPermission": []
+      },
+      {
+        "path": "lifecycle-studio/new-buyer/:id",
+        "noPermission": []
+      },
+      {
+        "path": "lifecycle-studio/repeat-customer/:id",
+        "noPermission": []
+      },
+      {
+        "path": "lifecycle-studio/sleeping-customer/:id",
+        "noPermission": []
+      },
+      {
+        "path": "trigger-studio",
+        "noPermission": []
+      }, {
+        "path": "trigger-studio/detail/:id",
+        "noPermission": []
+      },
+      {
+        "path": "trigger-studio/edit",
+        "noPermission": []
+      },
+      {
+        "path": "lifecycle-studio",
+        "noPermission": []
+      },
+      {
+        "path": "campaign-list",
+        "noPermission": []
+      }
+    ]
+  },
+  {
+    "path": "/reporting",
+    "children": [
+      {
+        "path": "index",
+        "noPermission": []
+      }
+    ]
+  },
+  {
+    "path": "/configuration",
+    "children": [
+      {
+        "path": "import1",
+        "noPermission": []
+      },
+      {
+        "path": "upload-history",
+        "noPermission": []
+      }
+    ]
+  }
+]

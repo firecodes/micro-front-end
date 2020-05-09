@@ -1,0 +1,11 @@
+@font-face{
+  font-family: Century Gothic;
+  src: url('../century_gothic/Century Gothic.eot'); /* IE9 Compat Modes */
+  src: url('../century_gothic/Century Gothic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../century_gothic/Century Gothic.woff') format('woff'), /* Modern Browsers */
+  url('../century_gothic/Century Gothic.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../century_gothic/Century Gothic.svg') format('svg'); /* Legacy iOS */
+}
+@import './index2.scss';
+@import '../custom.scss';
+@import '../index.scss';

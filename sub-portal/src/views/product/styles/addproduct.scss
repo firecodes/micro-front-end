@@ -1,0 +1,80 @@
+.addProduct {
+  padding: 30px 50px;
+  .ruleForm {
+    background-color: #fff;
+    box-shadow: 2px 2px 20px #ccc;
+    padding-left: 20px;
+    padding-top: 2px;
+    .el-form-item {
+      border-bottom: 1px solid #E6E6E6;
+      margin-bottom: 0px !important;
+      margin-top: 15px;
+      padding-bottom: 15px;
+      &:nth-last-of-type(1) {
+        border-bottom: none;
+      }
+    }
+    .el-form-item.disabledInput {
+      /deep/ .el-form-item__error {
+        display: none;
+      }
+    }
+    .el-form-item /deep/ .el-form-item__content .el-input {
+      width: 300px !important;
+    }
+    .el-form-item.upload /deep/ .el-form-item__content {
+      width: 100% !important;
+    }
+    .el-form-item /deep/ .el-form-item__label {
+      color: #333;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .el-select {
+      width: 300px !important;
+    }
+    .el-form-item.productCode {
+      /deep/ .el-checkbox {
+        margin-left: 10px;
+      }
+    }
+    .el-form-item.brandName, .el-form-item.productCategory {
+      .el-button {
+        margin-left: 10px;
+      }
+    }
+    .el-form-item.productUnit, .el-form-item.reatilPrice, .el-form-item.purchasedPrice {
+      /deep/ .el-select {
+        width: 69px !important;
+        margin-left: 10px;
+      }
+      .el-select /deep/ .el-input {
+        width: 100% !important;
+      }
+    }
+    .el-form-item.upload {
+      position: relative;
+      /deep/ .el-upload--picture-card {
+        position: relative;
+      }
+      /deep/ .hide .el-upload--picture-card {
+        display: none;
+      }
+      .el-icon-info {
+        color: #2777FF;
+        margin-right: 10px;
+      }
+      span {
+        font-size: 12px;
+        color: #333;
+      }
+      span.addImages {
+        font-size: 14px;
+        color: #2777FF;
+        position: absolute;
+        top: 22px;
+        left: 37px;
+      }
+    }
+  } 
+}

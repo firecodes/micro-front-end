@@ -1,0 +1,28 @@
+const getters = {
+  sidebar: state => state.app.sidebar,
+  token: state => state.user.token,
+  visitedViews: state => state.tagsView.visitedViews,
+  cachedViews: state => state.tagsView.cachedViews,
+  userInfo: state => state.user.userInfo,
+  roles: state => state.user.roles,
+  language: state => state.configuration.language,
+  addRouters: state => state.permission.addRouters,
+  permission_routers: state => state.permission.routers,
+  ccstyle: state => state.app.ccstyle,
+  campaign_edit: state => state.campaign.edit,
+  campaign_add: state => state.campaign.add,
+  performanceParams: state => state.campaign.performance_params,
+  i18n_data: state => state.configuration.i18n_data,
+  redeem_detail: state => state.redemption.redeem_detail,
+  redeem_component_id: state => state.redemption.redeem_component_id,
+  global_data: state => state.configuration.global_data,
+  business_data: state => state.configuration.business,
+  role_data: state => state.configuration.role,
+  lifecycle_configuration: state => state.campaign.lifecycle_configuration,
+  lifecycle_info: state => state.campaign.lifecycle_info,
+  update_state: state => state.campaign.update_state,
+  sidebar_item_state: state => state.user.sidebar_item_state,
+  fileImportItemValue: state => state.fileImport.itemValue,
+  memberTag: state => state.memberTag.addRecommend
+}
+export default getters
